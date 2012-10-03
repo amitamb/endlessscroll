@@ -1,0 +1,9 @@
+<div class="mosaic-block bar product unprocessed">
+  <a href="<%= product_path(product) %>" target="_blank" class="mosaic-overlay">
+    <div class="details">
+      <h4><%= product.title %></h4>
+      <p>Some stock product description</p>
+    </div>
+  </a>
+  <div class="mosaic-backdrop"><img src="<%= product.image_url %>" style="width:640px;height:480px;" /></div> 
+</div>

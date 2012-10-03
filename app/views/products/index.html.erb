@@ -6,6 +6,15 @@
 <% end %>
 </div>
 
-<%= will_paginate @products %>
+<br />
+
+<div style="clear:both;"></div>
+
+
+<%= will_paginate @products, :renderer => BootstrapPagination::Rails %>
+
+<br />
 
 <%= link_to 'New Product', new_product_path %>
+
+<br /><br />
