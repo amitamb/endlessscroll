@@ -1,5 +1,8 @@
 $ ->
   $(window).on("process_mosaic", ->
+    # remove styles which were added in case JS was disabled
+    $(".product.unprocessed").find(".mosaic-overlay").attr("style", "");
+    $(".product.unprocessed").find(".mosaic-backdrop").attr("style", "");
     $(".product.unprocessed").mosaic(
       animation: 'slide'
     )
